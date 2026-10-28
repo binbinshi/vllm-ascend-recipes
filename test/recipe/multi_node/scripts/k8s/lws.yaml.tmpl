@@ -56,6 +56,8 @@ spec:
                 value: {{ plan }}
               - name: AIS_BENCH_ENVIRONMENT_IDENTITY
                 value: runtime={{ image }}
+              - name: PIP_INDEX_URL
+                value: https://repo.huaweicloud.com/repository/pypi/simple
               - name: MULTI_NODE_STARTUP_TIMEOUT_SECONDS
                 value: "{{ startup_timeout_seconds }}"
               - name: MULTI_NODE_RUN_TIMEOUT_SECONDS
